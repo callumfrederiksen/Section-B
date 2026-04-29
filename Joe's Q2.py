@@ -38,7 +38,7 @@ def isSmithNumber(number):
         primeFactorDigitTotal += intSum(factor)
     return numberDigitTotal == primeFactorDigitTotal 
 
-if isSmithNumber(number):
+if isSmithNumber(number) and not isPrime(number):
     print("Smith Number")
 else:
     print("Not a Smith Number")
